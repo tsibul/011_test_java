@@ -22,9 +22,10 @@ public class ToysCatalogue {
         this.toys = toys;
     }
 
-    public void takeToy(){
-        if(this.quantity > 0){}
-        this.quantity -= 1;
+    public void takeToy() {
+        if (this.quantity > 0) {
+            this.quantity -= 1;
+        }
     }
 
     @Override

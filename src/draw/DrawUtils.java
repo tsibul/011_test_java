@@ -32,8 +32,7 @@ public class DrawUtils {
             int drawWin = random.nextInt(0, maximum);
             for (Draw item : drawList) {
                 if (drawWin >= item.getStart() && drawWin <= item.getEnd()) {
-                    Toy drawToy = item.getToy();
-                    return drawToy;
+                    return item.getToy();
                 }
             }
         }

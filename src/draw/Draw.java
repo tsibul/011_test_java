@@ -1,11 +1,6 @@
 package draw;
 
 import toys.Toy;
-import toyscatalogue.ToysCatalogue;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Random;
 
 public class Draw {
 
