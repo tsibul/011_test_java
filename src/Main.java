@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import static draw.DrawUtils.drawResult;
 import static outputs.Outputs.printCatalogue;
 import static outputs.Outputs.printQueue;
+import static takeprize.TakePrize.takePrize;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,16 +18,17 @@ public class Main {
         ArrayList<ToysCatalogue> stock = CatalogueFactory.toysStock(toys, 8);
         LinkedList<Toy> prizeQueue = new LinkedList<>();
         printCatalogue(stock);
-        printQueue(prizeQueue);
         int j = 0;
-        while(j < 20) {
+        while(j < 4) {
             drawResult(stock, prizeQueue);
             j++;
         }
         System.out.println();
         printCatalogue(stock);
         printQueue(prizeQueue);
-        System.out.println();
+        takePrize(prizeQueue);
+        takePrize(prizeQueue);
+        printQueue(prizeQueue);
 
     }
 }
